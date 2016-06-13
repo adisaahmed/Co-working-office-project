@@ -1,19 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 * {
 	padding: 0px;
 	margin: 0px;
 }
 
 body {
-	font-family: "Proxima Nova W01", "Apercu", Calibri, "Helvetica Neue", "Helvetica", sans-serif;
 	position: relative;
 	header {
-		background-color: #252729;
+		background-color: #fff;
 		position: absolute;
 		display: block;
 		min-width: 320px;
 		left: 0px;
 		right: 0px;
 		height: 60px;
+		font-family: 'Open Sans', sans-serif;
+		box-shadow: 0 1px 5px 0 #999;
 		.header_wrap {
 			position: relative;
 			display: inherit;
@@ -30,16 +32,10 @@ body {
 			    	li {
 		    		    position: relative;
 					    a {
-					    	overflow: hidden;
-						    text-align: left;
-						    text-transform: uppercase;
-					        width: 100px;
-							left: 10px;
-							height: 23px;
-							font-size: 16px;
-							line-height: 60px;	
-							text-decoration: none;
-							color: #fff;
+					    	img {
+					    		height: 60px;
+					    		line-height: 60px;
+					    	}
 							.fa {
 								padding-left: 10px;
 								font-size: 16px;
@@ -67,55 +63,56 @@ body {
     						a {
     							line-height: 60px;
     							padding: 23px 1em;
-    							color: #fff;
+    							color: #000;
     							text-decoration: none;
-    							font-size: 10px;
+    							font-size: 9px;
     							&:hover {
-    								background-color: #000;
-    								color: #006633;
+    								background-color: #58585A;
+    								color: #F7931D;
     							}
     						}
     					}
     					.button_li {
     						padding: 0 0.5em;
     						a {
-    							color: #006633;
-    							border-color: #006633;
+    							color: #58585A;
+    							border: 1px solid #58585A;
     							width: 100%;
-    							border: 1px solid;
     							letter-spacing: 2px;
     							padding: 0.5em 1em;
     							text-decoration: none;
     							&:hover {
-    								background-color: #fff;
-    								color: #000;
+    								background-color: #58585A;
+    								color: #F7931D;
     							}
     						}
     					}
     					.location {
-    						.drop_down {
-    							height: 90px;
-    							width: 180px;
-    							background-color: #fff;
-    							position: absolute;
-    							z-index: 1;
-    							border-radius: 10px;
-    							display: none;
-    							h3 {
-    								color: #edae49;
-    								text-align: center;
-    								font-size: 20px;
-    								font-weight: 600;
-    								margin-top: 20px;
-    							}
-    							p {
-    								color: #000;
-    								text-align: center;
-    								font-weight: 600;
-    								font-size: 12px;
-    							}
-    						}
-    					}
+							.drop_down {
+								height: auto;
+								width: 180px;
+								background-color: #fff;
+								position: absolute;
+								z-index: 1;
+								border-radius: 10px;
+								display: none;
+								padding: 10px;
+								h3 {
+									color: #edae49;
+									text-align: center;
+									font-size: 10px;
+									font-weight: 600;
+									margin-top: 5px;
+									margin-bottom: 0px;
+								}
+								p {
+									color: #000;
+									text-align: center;
+									font-weight: 600;
+									font-size: 10px;
+								}
+							}
+						}
     				}
 			    }
 			}
@@ -124,6 +121,7 @@ body {
 	.banner_wrap {
 		padding-top: 59px;
 	    height: 300px;
+	    font-family: 'Open Sans', sans-serif;
 		.banner_div {
 			background-image: url("../images/lakemary_banner.jpg");
 			height: 241px;
@@ -135,7 +133,7 @@ body {
 					color: #fff;
 					padding: 0px 5px;
 					font-weight: 600;
-					font-size: 40px;
+					font-size: 30px;
 					&:first-child {
 						border-right: 1px solid #fff;
 					}
@@ -146,21 +144,22 @@ body {
 	.banner_tabs {
 		height: 40px;
 		width: 100%;
-		background-color: #ddd;
+		background-color: #58585A;
 		text-align: center;
 		line-height: 40px;
+		font-family: 'Open Sans', sans-serif;
 		ul {
 			list-style: none;
 			li {
 				display: inline-block;
 				a {
 					padding: 10px;
-					color: #000;
+					color: #fff;
 					text-decoration: none;
 					text-transform: uppercase;
 					font-size: 10px;
 					&:hover {
-						color: #006633;
+						color: #F7931D;
 					}
 				}
 			}
@@ -169,6 +168,7 @@ body {
 	.con {
 		margin-top: 50px;
 		margin-bottom: 50px;
+		font-family: 'Open Sans', sans-serif;
 		.col-md-8 {
 			.plan_wrapper {
 				height: auto;
@@ -176,25 +176,32 @@ body {
 				border-top: 2px solid #000;
 				h1 {
 					font-weight: 600;
-					font-size: 20px;
+					font-size: 15px;
 					text-transform: uppercase;
 				}
 				p {
+					font-size: 11px;
 					a {
 						font-size: 10px;
+						&:hover {
+							color: #F7931D;
+						}
 					}
 				}
 				h3 {
 					font-weight: 600;
-					font-size: 20px;
+					font-size: 15px;
 				}
 				button {
 					height: 40px;
 					margin-bottom: 10px;
 					margin-top: 10px;
-					background-color: #006633;
+					background-color: #F7931D;
 					border: none;
 					border-radius: 5px;
+					&:hover {
+						background-color: #58585A;
+					}
 					a {
 						padding: 4px 50px;
 						text-decoration: none;
@@ -213,21 +220,26 @@ body {
 					background-color: #000;
 					padding: 5px 10px;
 					h2 {
-						font-size: 20px;
+						font-size: 15px;
 						margin-bottom: 5px;
 						margin-top: 5px;
 						color: #fff;
 						text-transform: uppercase;
+						font-weight: 600;
 					}
 				}
 				.divs_wrapper {
-					background-color: #ddd;
+					background-color: #58585A;
 					padding: 5px 10px;
 					h3 {
 						text-transform: uppercase;
-						font-size: 15px;
+						font-size: 13px;
 						font-weight: 600;
-						color: #000;
+						color: #fff;
+					}
+					p {
+						font-size: 11px;
+						color: #fff;
 					}
 				}
 			}
@@ -237,6 +249,7 @@ body {
 		width: 100%;
 		height: 200px;
 		background-color: #1E2222;
+		font-family: 'Open Sans', sans-serif;
 		.row {
 			.col-md-4 {
 				padding-top: 50px;
@@ -248,13 +261,13 @@ body {
 						a {
 							color: #fff;
 							text-decoration: none;
-							font-size: 10px;
+							font-size: 9px;
 							text-transform: uppercase;
 							&:hover {
-								color: #006633;
+								color: #F7931D;
 							}
 							.fa {
-								font-size: 20px;
+								font-size: 15px;
 							}
 						}
 					}
