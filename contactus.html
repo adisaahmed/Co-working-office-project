@@ -47,16 +47,16 @@
 				<div class="form_wrapper">
 					<h2>Have any questions? We're here to help!</h2>
 					<p>For general inquiries and support, please fill out the form below.</p>
-					<form>
+					<form method="post" action="email.php">
 						Your name (required)<br>
-  						<input type="text" name="name"><br>
+  						<input type="text" name="name" required><br>
   						Your email address (required)<br>
-  						<input type="email" name="email"><br>
+  						<input type="email" name="email" required><br>
   						Subject (required)<br>
-  						<input type="text" name="Subject"><br>
+  						<input type="text" name="Subject" required><br>
   						Message (required)<br>
-  						<textarea name="message"></textarea>
-  						<button><a href="">send</a></button>
+  						<textarea name="message" required></textarea>
+  						<button type="submit">SEND</button>
 					</form>
 				</div>
 			</div>
