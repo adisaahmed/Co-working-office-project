@@ -1,13 +1,13 @@
 <?php
 //// $email and $message are the data that is being
 //// posted to this page from our html contact form
-$email = $_REQUEST['email'] ;
-$message = $_REQUEST['message'] ;
-$name = $_REQUEST['name']
-$subject = $_REQUEST['subject']
+$email = $_POST['email'] ;
+$message = $_POST['message'] ;
+$name = $_POST['name'];
+$subject = $_POST['subject'];
 //// When we unzipped PHPMailer, it unzipped to
 //// public_html/PHPMailer_5.2.0
-require("PHPMailerAutoload.php");
+require("vendor/phpmailer/phpmailer/PHPMailerAutoload.php");
 //
 $mail = new PHPMailer();
 //
@@ -26,6 +26,7 @@ $mail->SMTPAuth = true;     // turn on SMTP authentication
 $mail->Username = "styccs@gmail.com";  // SMTP username
 $mail->Password = "600ts!ll"; // SMTP password
 $mail->setFrom('styccs@gmail.com', 'First Last');
+$mail->AddAddress($email, $name);
 $mail->IsHTML(true);
 $mail->Subject = $subject;
 $mail->Body    = $message;
