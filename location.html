@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Location</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/location.css">
+	<script src="js/jquery.js"></script>
+	<link rel="shortcut icon" href="images/colo_logo.png">
+</head>
+<body>
+	<header>
+		<div class="header_wrap container">
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html"><img src="images/colo_logo.png"></a>
+					</li>
+				</ul>
+				<section>
+					<ul>
+						<li class="location">
+							<a href="javascript:void(0)">Locations<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+							<div class="drop_down">
+								<h3>LAGOS STATE</h3>
+								<P><a href="location.html">Ikeja</a></P>
+							</div>
+						</li>
+						<li><a href="">Membership</a></li>
+						<li><a href="#third_section">Plans & Pricing</a></li>
+						<li><a href="contactus.html">Contact us</a></li>
+						<li><a href="aboutus.html">About us</a></li>
+						<li class="button_li"><a href="">Login</a></li>
+						<li class="button_li"><a href="signup.html">Signup</a></li>
+					</ul>
+				</section>
+			</nav>
+		</div>
+	</header>
+	<div class="main_body container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="content_wrap">
+					<h3>Lagos State / Ikeja</h3>
+					<h2>THE COLONY- ALLEN</h2>
+					<p>Located on the third floor of a building at the heart of the commercial district in Ikeja, Lagos; The Colony Allen Avenue has a comfortable vibe with a mix of open area, private offices and a quiet nook. This is the original Colony location.</p>
+					<ul>
+						<li><span>Amenities:</span>Fast and secure wifi, Printer, Free office supplies, Meeting rooms with full A/V capabilities, Bottomless coffee, still and sparkling water, Variety of standing, sitting, and soft seating workspaces, community kitchen space are available.</li>
+						<li><span>Membership Options:</span>Make The Colony -Allen your permanent or occasional workplace. Combine space & membership options to get what you need. We promise a vibrant mix of skills & industries that will lead to new connections and collaborations.</li>
+						<li><span>Hours:</span>We are open for all members and guests Monday through Friday from 8:30am to 5.30pm, except major holidays.</li>
+						<li><span>Direction and Parking:</span>The Colony -Allen is situated on the 3rd floor of 48 Allen Avenue directly opposite Union Bank branch office and three (3) buildings after the KFC restaurant. Parking is on the street directly behind the building, you can either take the turning right immediately after the KFC restaurant or drive a little further and turn in through Ogundana street to get to the spot.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="map_wrapper">
+					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:500px;width:600px;'><div id='gmap_canvas' style='height:500px;width:600px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://termsofusegenerator.net">terms of use generator</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(6.6004673,3.3527036000000408),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(6.6004673,3.3527036000000408)});infowindow = new google.maps.InfoWindow({content:'<strong>Nigeria, Lagos State</strong><br>48, Allen avenue, Ikeja.<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="services.html">Services and benefits</a></li>
+							<li><a href="event.html">Events</a></li>
+							<li><a href="faq.html">faq</a></li>
+							<li><a href="contactus.html">contact us</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul>
+							<li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+							<li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+							<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+							<li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul>
+							<li><a href="">E-mail- info@thecolony.com.ng</a></li>
+							<li><a href="">Address: 3rd floor, 48, Allen avenue, Ikeja</a></li>
+							<li><a href="">© 2016 The Colony</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+</body>
+
+
+
+	<script>
+		$(document).ready(function(){
+		    $(".location").click(function(){
+		        $(".drop_down").toggle(1000);
+		    });
+		});
+	</script>
+</html>
