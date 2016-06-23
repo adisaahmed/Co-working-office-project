@@ -25,8 +25,8 @@ $mail->SMTPAuth = true;     // turn on SMTP authentication
 
 $mail->Username = "styccs@gmail.com";  // SMTP username
 $mail->Password = "600ts!ll"; // SMTP password
-$mail->setFrom('styccs@gmail.com', 'First Last');
-$mail->AddAddress($email, $name);
+$mail->setFrom($email, $name);
+$mail->AddAddress('styccs@gmail.com', 'Alert');
 $mail->IsHTML(true);
 $mail->Subject = $subject;
 $mail->Body    = $message;
