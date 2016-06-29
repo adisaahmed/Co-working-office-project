@@ -40,4 +40,6 @@ if(!$mail->Send())
 }
 
 echo "Message has been sent";
+header("Location: http://thecolony.com.ng/contactus.html");
+exit;
 ?>
