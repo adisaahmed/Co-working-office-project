@@ -32,7 +32,9 @@ if(!$mail->send()) {
 }
 else {
     echo "Message has been sent successfully";
-    header("Location: http://thecolony.com.ng/contactus.html");
-    exit;
 }
 ?>
+<script type="text/javascript">
+window.location.href = "http://thecolony.com.ng/contactus.html";
+</script>
+<?php ?>

@@ -33,3 +33,7 @@ else {
     echo "Message has been sent successfully";
 }
 ?>
+<script type="text/javascript">
+window.location.href = 'http://www.google.com.au/';
+</script>
+<?php ?>
